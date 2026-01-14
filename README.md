@@ -184,19 +184,6 @@ The app requires the following permissions:
 
 ---
 
-## 🚧 Future Enhancements
-
-- [ ] Multiple daily reminders per medication
-- [ ] Medication history and tracking
-- [ ] Skip/snooze functionality
-- [ ] Medication inventory management
-- [ ] Cloud sync across devices
-- [ ] iOS support
-- [ ] Dark mode
-- [ ] Multiple language support
-
----
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
@@ -219,8 +206,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- GitHub: [@mrjay45](https://github.com/mrjay45)
+- LinkedIn: [jay raut](https://www.linkedin.com/in/jay-raut-5821a2244/)
 
 ---
 
