@@ -41,3 +41,80 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Android related
+/android/.gradle/
+/android/captures/
+/android/gradlew
+/android/gradlew.bat
+/android/local.properties
+/android/.idea/
+/android/app/*.apk
+/android/app/*.ap_
+/android/app/build/
+/android/key.properties
+
+# iOS related
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+/ios/ServiceDefinitions.json
+/ios/Runner/GeneratedPluginRegistrant.*
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.hmap
+*.ipa
+*.xcuserstate
+*.xcscmblueprint
+*.xcscheme
+
+# macOS related
+/macos/Pods/
+/macos/.symlinks/
+/macos/Flutter/Flutter.framework
+/macos/Flutter/Flutter.podspec
+
+# Windows related
+/windows/flutter/
+*.bat
+
+# Coverage
+coverage/
+*.lcov
+
+# Exceptions
+!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
+!/dev/ci/**/Gemfile.lock
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.config.dart
+/lib/generated/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# README images (keep screenshots)
+# If you want to exclude screenshots, uncomment:
+# /screenshots/

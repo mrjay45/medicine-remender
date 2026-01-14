@@ -47,13 +47,25 @@ class NotificationService {
   }
 
   Future<bool> requestPermissions() async {
-    final status = await Permission.notification.status;
+    // Request notification permission
+    final notificationStatus = await Permission.notification.request();
 
-    if (status.isDenied) {
-      final result = await Permission.notification.request();
-      return result.isGranted;
+    // Request exact alarm permission for Android 12+
+    if (await Permission.scheduleExactAlarm.isDenied) {
+      await Permission.scheduleExactAlarm.request();
     }
-    return status.isGranted;
+
+    // Request permission to show notifications
+    final androidImplementation =
+        _notifications.resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>();
+
+    if (androidImplementation != null) {
+      await androidImplementation.requestNotificationsPermission();
+      await androidImplementation.requestExactAlarmsPermission();
+    }
+
+    return notificationStatus.isGranted;
   }
 
   // Test notification - sends immediately
